@@ -17,9 +17,9 @@ const CreatePersonalRoutineModal = ({
   };
 
   const toggleDaySelection = (day) => {
-    const updatedDays = routine.recurringDays.includes(day)
-      ? routine.recurringDays.filter((d) => d !== day)
-      : [...routine.recurringDays, day];
+    const updatedDays = routine.recurringDays.some((d) => d.day === day)
+      ? routine.recurringDays.filter((d) => d.day !== day)
+      : [...routine.recurringDays, { day, success: false }];
     onChangeRoutine({ ...routine, recurringDays: updatedDays });
   };
 
@@ -64,7 +64,9 @@ const CreatePersonalRoutineModal = ({
                 <div
                   key={day}
                   className={`modal-day-item ${
-                    routine.recurringDays.includes(day) ? 'selected' : ''
+                    routine.recurringDays.some((d) => d.day === day)
+                      ? 'selected'
+                      : ''
                   }`}
                   onClick={() => toggleDaySelection(day)}
                 >
@@ -79,7 +81,7 @@ const CreatePersonalRoutineModal = ({
               <input
                 type="checkbox"
                 name="notification"
-                checked={routine.notification}
+                checked={routine.notification || false}
                 onChange={(e) =>
                   onChangeRoutine({
                     ...routine,

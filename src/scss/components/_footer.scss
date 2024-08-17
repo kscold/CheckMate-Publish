@@ -6,8 +6,8 @@
   box-sizing: border-box;
   border-top: 2px solid #b4b4b4;
 
-  &.hide-footer{
-      display: none;
+  &.hide-footer {
+    display: none;
   }
 
   .footer-item-container {
@@ -35,19 +35,4 @@
       }
     }
   }
-
-  .footer-routine-view-container {
-    @include inline-flexbox(center, center);
-    .footer-routine-view-button {
-      margin-top: 20px;
-      width: 338px;
-      height: 48px;
-      padding: 10px;
-      @include inline-flexbox(center, center);
-      @include custom-font-size(600, 16px, white);
-      border-radius: 8px;
-      background: #3c3c3c;
-    }
-  }
 }
-
