@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 58px;
+}
+
+.barContainer {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.progressBar {
+  background: #333;
+  height: 29px;
+  transition: width 0.3s ease;
+}
+
+.percentageLabel {
+  margin-left: 10px;
+  color: #1b1b1b;
+  font-size: 16px;
+}

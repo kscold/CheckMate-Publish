@@ -1,0 +1,13 @@
+@mixin mypage_appeal_box($gap) {
+  display: flex;
+  width: 88.613px;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap;
+  flex-shrink: 0;
+}
+
+@mixin box-size($w, $h) {
+  width: $w;
+  height: $h;
+}

@@ -1,0 +1,95 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "group": "리액트 스터디",
+            "days": [
+                {
+                    "weekday": "월",
+                    "events": [
+                        {
+                            "title": "리액트 복습하기",
+                            "success": true
+                        },
+                        {
+                            "title": "강의 4강 듣기",
+                            "success": true
+                        }
+                    ]
+                },
+                {
+                    "weekday": "화",
+                    "events": []
+                },
+                {
+                    "weekday": "수",
+                    "events": [
+                        {
+                            "title": "코딩하기",
+                            "success": false
+                        }
+                    ]
+                },
+                {
+                    "weekday": "목",
+                    "events": []
+                },
+                {
+                    "weekday": "금",
+                    "events": []
+                },
+                {
+                    "weekday": "토",
+                    "events": []
+                },
+                {
+                    "weekday": "일",
+                    "events": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "group": "토익 스터디",
+            "days": [
+                {
+                    "weekday": "월",
+                    "events": [
+                        {
+                            "title": "단어 복습하기",
+                            "success": true
+                        },
+                        {
+                            "title": "영단어 듣기",
+                            "success": true
+                        }
+                    ]
+                },
+                {
+                    "weekday": "화",
+                    "events": []
+                },
+                {
+                    "weekday": "수",
+                    "events": []
+                },
+                {
+                    "weekday": "목",
+                    "events": []
+                },
+                {
+                    "weekday": "금",
+                    "events": []
+                },
+                {
+                    "weekday": "토",
+                    "events": []
+                },
+                {
+                    "weekday": "일",
+                    "events": []
+                }
+            ]
+        }
+    ]
+}

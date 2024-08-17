@@ -1,0 +1,8 @@
+@mixin follow-box() {
+  @include box-size(80%, 35px);
+  @include inline-flexbox();
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+}

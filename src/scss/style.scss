@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import "./setting/common";
+@import "./setting/reset";
+
+@import "./mixins/flexbox";
+@import "./mixins/font";
+@import "./mixins/mypageStyle";
+@import "./mixins/navLink";
+@import "./mixins/community_home";
+@import "./mixins/scroll_box";
+@import "./mixins/followbox";
+
+@import "./components/layout";
+@import "./components/footer";
+
+@import "./page/main";
+
+@import "./page/mypage";
+
+@import "./page/community/create_modal";
+@import "./page/community";
+@import "./page/login";
+@import "./page/register";

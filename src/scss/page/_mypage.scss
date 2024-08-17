@@ -1,0 +1,351 @@
+.mypage-page {
+  padding: 0rem;
+  @include column-flexbox(start, start);
+
+  .mypage-header-container {
+    @include fixed_header();
+
+    .mapage-header-box {
+      @include inline-flexbox(center, center);
+      padding: 0 32px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        padding: 0 16px; /* Adjust padding for small screens */
+      }
+    }
+  }
+}
+
+.mypage-header-root {
+  @include inline-flexbox(center, start);
+  gap: 3.5rem;
+  margin-top: 61px;
+  margin-left: 75px;
+  margin-right: 75px;
+  @media screen and (max-width: 360px) {
+    gap: 15%;
+    align-items: center;
+  }
+
+  .nav-link {
+    @include _nav-link();
+  }
+
+  .nav-link.underline {
+    @include _nav-link_under-line();
+  }
+}
+.mypage-root-line {
+  background: var(--calender_date_box, #eaeaea);
+  height: 1px;
+}
+
+.mypage-profile {
+  display: flex;
+  width: 100%;
+
+  .mypage-profile-picture {
+    @include box-size(5.1087rem, 5.1087rem);
+    margin: 2.7144rem 1.6019rem 0rem 1.4631rem;
+    flex-shrink: 0;
+    border-radius: 3.7843rem;
+    background: #d5d5d5;
+  }
+
+  .mypage-profile-box {
+    display: block;
+    width: 100%;
+    padding: 1%;
+
+    .mypage-profile-name {
+      @include box-size(Fixed 1.75rem, Fixed 1.1875rem);
+      margin: 3.6425rem 0px 0px;
+    }
+    .mypage-profile-content {
+      width: 100%;
+      margin: 0.4387rem 0px 0px;
+      display: block;
+    }
+  }
+}
+
+.mypage-profile-appeal-all {
+  display: flex;
+
+  .mypage-profile-appeal-mail {
+    @include box-size(40%, 78px);
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px;
+    background: #b4b4b4;
+    margin: 61.2px 1px 0px auto;
+
+    .mypage-profile-appeal-mail-box {
+      @include mypage_appeal_box(0.4375rem);
+      margin: 0.8275rem auto 0.8275rem;
+
+      .mypage-profile-appeal-mail-icon {
+        @include mypage_appeal_box(7px);
+      }
+    }
+  }
+
+  .mypage-profile-appeal-like {
+    @include box-size(40%, 78px);
+    flex-shrink: 0;
+    border-radius: 0px 8px 8px 0px;
+    background: #b4b4b4;
+    margin: 61.2px auto 0px 1px;
+
+    .mypage-profile-appeal-like-box {
+      display: flex;
+      width: 88.613px;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      margin: 13.24px auto 13.24px;
+
+      .mypage-profile-appeal-like-icon-box-num {
+        display: flex;
+        .mypage-profile-appeal-like-num {
+          @include custom-font-size(700, 15.471px, white);
+          width: 20.914px;
+          margin: 4.26px 0px 4.26px 4px;
+        }
+      }
+    }
+  }
+}
+
+.mypage-profile-appeal-text {
+  @include custom-font-size(600, 15px, white);
+  text-align: center;
+}
+
+.mypage-profile-edit {
+  @include follow-box();
+  border: 1px solid #b2b2b2;
+  margin: 22.07px auto 0px;
+}
+
+.mypage-divide-line {
+  @include box-size(100%, 0.5625rem);
+  background: #f4f4f4;
+  margin: 2.2456rem auto 0rem auto;
+}
+.mypage-alarm-commnuity-container {
+  margin-top: 40px;
+  width: 100%;
+
+  .mypage-alarm-community-section {
+    flex-direction: column;
+    gap: 8px;
+
+    .mypage-alarm-communication {
+      @include custom-font-size(600, 16px, black);
+      align-self: stretch;
+      padding-left: 20px;
+    }
+    .mypage-alarm-group-list {
+      .mypage-alarm-group-list-p {
+        padding: 12px 20px;
+      }
+      .mypage-alarm-item-group-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px;
+
+        .mypage-alarm-item-group-icon img {
+          @include box-size(40px, 40px);
+          border-radius: 20px;
+        }
+        .mypage-alarm-item-group-details {
+          flex: 1;
+          margin-left: 16px;
+
+          .mypage-alarm-item-group-name {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            .com-mypage-alarm-detail-button {
+              margin-left: auto;
+              margin-top: 7px;
+            }
+          }
+
+          .mypage-alarm-item-group-notice {
+            font-size: 0.875rem;
+            color: #888;
+          }
+        }
+      }
+    }
+    .mypage-alarm-communication-count {
+      align-self: stretch;
+
+      .mypage-alarm-communication-now {
+        @include custom-font-size(500, 13px, color-9);
+      }
+
+      .mypage-alarm-communication-all {
+        @include custom-font-size(500, 13px, color-10);
+        padding-left: 20px;
+      }
+      display: flex;
+    }
+  }
+}
+
+.mypage-community-section {
+  @include inline-flexbox(center, start);
+  width: 92%;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20.5px;
+
+  .mypage-communication {
+    @include custom-font-size(600, 16px, black);
+    align-self: stretch;
+  }
+
+  .mypage-communication-count {
+    align-self: stretch;
+
+    .mypage-communication-now {
+      @include custom-font-size(500, 13px, color-9);
+    }
+
+    .mypage-communication-all {
+      @include custom-font-size(500, 13px, color-10);
+    }
+    display: flex;
+  }
+}
+
+.mypage-communication-list {
+  margin: 26px;
+  display: flex;
+  margin: 13px 0px;
+
+  .mypage-communication-list-image {
+    @include inline-flexbox(start);
+    @include box-size(50px, 50px);
+    padding: 11.033px 8.931px 11.033px 8.93px;
+    border-radius: 37.037px;
+    background: #f0f0f0;
+  }
+
+  .mypage-communication-list-content {
+    display: block;
+
+    .mypage-communication-list-name {
+      margin: 0px 0px 0px 20px;
+    }
+
+    .mypage-communication-list-member {
+      margin: 0px 0px 0px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+.mypage-show-alarm-main-container-box-all {
+  width: 100%;
+  .mypage-show-alarm-main-container-box {
+    .mypage-alarm-detail-content {
+      .mypage-alarm-detail-box {
+        padding: 16px 20px;
+        height: 80px;
+
+        .mypage-alarm-detail-content-box {
+          display: flex;
+          margin-top: 5px;
+          .mypage-alarm-detail-content-box-title {
+            padding-top: 5px;
+          }
+          .mypage-alarm-detail-button {
+            margin-left: auto;
+            margin-top: 7px;
+          }
+        }
+        .mypage-alarm-detail-content-sub {
+          @include custom-font-size(500, 13px, color-1);
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+.mypage-like-container-box {
+  width: 100%;
+  .mypage-like-header {
+    padding: 0rem;
+    @include column-flexbox(start, start);
+    @include fixed_header();
+
+    .mypage-like-view-container {
+      .mypage-like-header-container {
+        display: flex;
+        padding: 44px 0px 0px 0px;
+
+        .mypage-like-header-icon {
+          padding: 6px 0 6px 20px;
+        }
+        .mypage-like-header-title {
+          @include inline-flexbox();
+
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .mypage-like-chat-list {
+    padding-bottom: 20px;
+  }
+  .mypage-like-record-list {
+    padding-left: 16px;
+
+    .mypage-like-record-list-container-box {
+      display: block;
+      .mypage-like-record-list-title {
+        @include custom-font-size(500, 16px, color-1);
+        margin: 30px 0px 16px 0px;
+      }
+      .mypage-like-record-list-title-content-box {
+        display: flex;
+        width: 100%;
+
+        .mypage-like-record-list-title-content-box-picture {
+          @include box-size(2.5rem, 2.5rem);
+          @include box-radius_with_color(3.7843rem, bcolor-1);
+          margin: 25px 5px 0rem 0px;
+        }
+        .mypage-like-record-list-title-content-box-content-detail {
+          display: flex;
+          width: 100%;
+          padding: 1%;
+
+          .mypage-like-record-list-title-content-box-content-title {
+            @include box-size(Fixed 1.75rem, Fixed 1.1875rem);
+            font-size: 14px;
+
+            margin: 30px 0px 0px;
+            /* 자동 여백을 추가하여 이름의 길이와 관계없이 다른 요소들을 오른쪽으로 밀어냅니다 */
+          }
+          .mypage-like-record-list-title-content-box-content-title-sub {
+            @include custom-font-size(500, 12px, black);
+            margin: 34px 2px 0px;
+            width: 70%;
+          }
+          .mypage-like-record-list-title-content-time {
+            @include custom-font-size(500, 8px, color-1);
+            margin-top: 40px;
+            text-align: right;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.goalProgressContainer {
+  border-radius: 10px;
+  margin-bottom: 90px;
+}
+
+.title {
+  font-size: 15px !important;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+  color: black;
+}
+
+.achievementBarContainer {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.progressContainer {
+  width: 87%;
+  height: 28px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 12.5px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 12.5px 0 0 12.5px;
+}
+
+.myAchievementBar {
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 12.5px 0 0 12.5px;
+}
+
+.myAchievementLabel {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.goalInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.goalInfoBox {
+  color: white !important;
+  width: 49.6%;
+  background-color: #aaaaaa;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+}
+.goalInfoBox2 {
+  width: 49.6%;
+  background-color: #aaaaaa;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+}
+.averageAchievementLine {
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  top: 26px;
+
+  background: transparent;
+  border-left: 0.9px dashed #aaa;
+}
+
+.averageAchievementLabel {
+  position: absolute;
+  top: calc(100% + 10px);
+  transform: translateX(-90%);
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  color: black;
+}
+
+.highlight {
+  color: white;
+}
+.fontsmall {
+  font-size: 14px !important;
+}

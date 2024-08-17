@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "리액트 100일 스터디",
+      "notice": "호스트가 공지글을 게시했습니다.",
+      "time": "오후 8:36",
+      "image": "images/chodan.png",
+      "badge" : "300+"
+    },
+    {
+      "id": 2,
+      "name": "토익 스터디 커뮤니티",
+      "notice": "@Lundean 님이 입장했습니다.",
+      "time": "오후 5:40",
+      "image": "images/wonyoung.png",
+      "badge" : null
+    },
+    {
+      "id" : 3,
+      "name" : "헬창 커뮤니티",
+      "notice" : "호스트가 공지글을 게시했습니다",
+      "time" : "오전 7:30",
+      "image" : "images/ronnie.png",
+      "badge" : "300+"
+    }
+  ]
+  

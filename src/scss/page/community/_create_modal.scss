@@ -1,0 +1,214 @@
+.main-create-personal-routine-modal-overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    .main-create-personal-routine-modal-content {
+        position: absolute;
+        bottom: 0;
+        background: white;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        .modal-close-button-container {
+            @include inline-flexbox(center, center);
+            margin-bottom: 43px;
+            padding-top: 15px;
+
+            .modal-close-button {
+                border: none;
+                width: 38px;
+                height: 4px;
+                background-color: #cdcdcd;
+            }
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+            .modal-section {
+                .modal-section-routine-title {
+                    color: var(--Black, #121212);
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 11px;
+                }
+
+                .modal-input-group {
+                    display: flex;
+                    gap: 6px;
+                    height: 35px;
+                    width: 100%; /* 전체 부모 컨테이너의 너비를 차지 */
+
+                    input:nth-child(1) {
+                        border-radius: 8px;
+                        border: solid var(--gray-1, #cdcdcd);
+                        max-width: 93px;
+                        flex-shrink: 0; /* 첫 번째 input의 크기가 축소되지 않도록 설정 */
+                        padding: 5px;
+                    }
+
+                    input:nth-child(2) {
+                        border-radius: 8px;
+                        border: solid var(--gray-1, #cdcdcd);
+                        flex-grow: 1;
+                        padding: 5px;
+                    }
+                }
+
+                .modal-section-routine-day {
+                    color: var(--Black, #121212);
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                    span {
+                        color: var(--gray-3, #bababa);
+                        font-family: Pretendard;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .modal-days-container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 42px;
+                    gap: 10px;
+
+                    .modal-day-item {
+                        @include inline-flexbox(center, center);
+                        border-radius: 8px;
+                        cursor: pointer;
+                        background-color: var(--gray-10, #3c3c3c);
+                        color: var(--white, #fff);
+                        text-align: center;
+                        flex: 1;
+                        margin: 0 4px;
+                    }
+                }
+            }
+
+            .modal-section-alert {
+                @include inline-flexbox(between, center);
+                margin-top: 38px;
+                margin-bottom: 150px;
+                .modal-section-alert-title {
+                    color: var(--Black, #121212);
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 8px;
+                    span {
+                        color: var(--gray-3, #bababa);
+                        font-family: Pretendard;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-day-item.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.modal-switch {
+    display: flex;
+    align-items: center;
+}
+
+.modal-footer {
+    @include column-flexbox(center, center);
+    width: 100%;
+    margin-top: 24px;
+    .modal-footer-button-container {
+        width: 100%;
+        @include inline-flexbox(between, center);
+        padding: 20px 25px 35px 25px;
+        .modal-delete-button {
+            @include inline-flexbox(center, center);
+            gap: 5px;
+            background-color: #ff4d4f;
+            width: 162px;
+            height: 48px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .modal-save-button {
+            background-color: #000;
+            width: 162px;
+            height: 48px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    }
+}
+
+/* 토글 스위치 스타일 */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #3c3c3c;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}

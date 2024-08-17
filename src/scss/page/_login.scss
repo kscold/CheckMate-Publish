@@ -1,0 +1,59 @@
+.login-container {
+  width: 100%;
+  height: 100%;
+  @include column-flexbox(center, center);
+  gap: 60px;
+  background-color: #4ed69c;
+  //   .login-title {
+  //     color: var(--Black, #121212);
+  //     font-family: Inter;
+  //     font-size: 35px;
+  //     font-style: normal;
+  //     font-weight: 600;
+  //     line-height: normal;
+  //   }
+
+  .logo-img {
+    width: 267px;
+    height: 32px;
+  }
+  /* 특정 버튼에 대한 스타일 오버라이드 */
+  .login-btn {
+    background-color: #4285f4 !important; // Google 색상 유지
+    color: white !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    cursor: pointer !important;
+
+    // 호버 효과
+    &:hover {
+      background-color: #357ae8 !important;
+    }
+
+    // 기본 이미지 크기 조정 (예: 구글 로고)
+    img {
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+  // .login-button-container {
+  //     @include inline-flexbox(center, center);
+  //     padding: 12px 24px;
+  //     width: 280px;
+  //     height: 48px;
+  //     border-radius: 8px;
+  //     background: var(--kakao, #fdec68);
+  //     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  //     gap: 8px;
+
+  //     span {
+  //         color: var(--Black, #121212);
+  //         @include custom-font-size(600, 14px, color-15);
+  //         font-style: normal;
+  //         line-height: normal;
+  //         letter-spacing: 0.07px;
+  //     }
+  // }
+}

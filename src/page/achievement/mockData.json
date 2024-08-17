@@ -1,0 +1,27 @@
+{
+  "achievements": [
+    { "date": "2024-01-01", "percentage": 70 },
+    { "date": "2024-01-02", "percentage": 80 },
+    { "date": "2024-01-03", "percentage": 90 },
+    { "date": "2024-02-01", "percentage": 60 },
+    { "date": "2024-02-02", "percentage": 75 },
+    { "date": "2024-02-03", "percentage": 85 },
+    { "date": "2024-03-01", "percentage": 65 },
+    { "date": "2024-03-02", "percentage": 70 },
+    { "date": "2024-03-03", "percentage": 80 },
+    { "date": "2024-04-01", "percentage": 85 },
+    { "date": "2024-04-02", "percentage": 90 },
+    { "date": "2024-04-03", "percentage": 95 },
+    { "date": "2024-05-01", "percentage": 75 },
+    { "date": "2024-05-02", "percentage": 80 },
+    { "date": "2024-05-03", "percentage": 85 },
+    { "date": "2024-06-01", "percentage": 65 },
+    { "date": "2024-06-02", "percentage": 70 },
+    { "date": "2024-06-03", "percentage": 75 },
+    { "date": "2024-07-02", "percentage": 80 },
+    { "date": "2024-07-03", "percentage": 85 },
+    { "date": "2024-07-11", "percentage": 65 },
+    { "date": "2024-07-12", "percentage": 70 },
+    { "date": "2024-07-13", "percentage": 75 }
+  ]
+}

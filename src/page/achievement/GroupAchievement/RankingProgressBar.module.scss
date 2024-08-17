@@ -1,0 +1,53 @@
+.rankItem {
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.medal {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.nickname {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.achievementText {
+  font-size: 12.4px;
+  margin-left: 34px;
+}
+
+.progressContainer {
+  width: 285px;
+  height: 17px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+  position: relative;
+  left: -20px;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.percentageLabel {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.progressbarall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}

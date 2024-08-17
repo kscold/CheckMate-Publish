@@ -1,0 +1,70 @@
+.goalContainer {
+  padding: 20px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.goalRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: -10px;
+}
+.label {
+  font-size: 14px !important;
+  color: #888;
+  flex-basis: 30%;
+}
+
+.value {
+  font-size: 16px !important;
+  color: #333;
+  flex-grow: 1;
+  text-align: left;
+}
+.value strong {
+  font-weight: bold;
+}
+
+.importanceContainer {
+  margin-top: 10px;
+}
+
+.importanceBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.progressContainer {
+  left: 90px;
+  width: 70%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #333;
+}
+
+.importanceLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #666;
+}
+
+.importanceLabel span:first-child {
+  position: relative;
+  left: 25%;
+}
+
+.importanceLabel span:last-child {
+  position: relative;
+  right: 5%;
+}

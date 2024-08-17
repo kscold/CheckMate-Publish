@@ -1,0 +1,80 @@
+{
+    "personal": [
+        {
+            "title": "8시 기상",
+            "time": "08:00",
+            "recurringDays": [
+                {
+                    "day": "월",
+                    "success": true
+                },
+                {
+                    "day": "화",
+                    "success": false
+                },
+                {
+                    "day": "수",
+                    "success": true
+                },
+                {
+                    "day": "목",
+                    "success": true
+                },
+                {
+                    "day": "금",
+                    "success": true
+                }
+            ]
+        },
+        {
+            "title": "헬스장 가기",
+            "time": "09:00",
+            "recurringDays": [
+                {
+                    "day": "수",
+                    "success": true
+                },
+                {
+                    "day": "목",
+                    "success": false
+                },
+                {
+                    "day": "금",
+                    "success": true
+                }
+            ]
+        },
+        {
+            "title": "유산소 1시간 타기",
+            "time": "10:00",
+            "recurringDays": [
+                {
+                    "day": "수",
+                    "success": false
+                },
+                {
+                    "day": "목",
+                    "success": false
+                }
+            ]
+        },
+        {
+            "title": "코딩하기",
+            "time": "09:00",
+            "recurringDays": [
+                {
+                    "day": "수",
+                    "success": false
+                },
+                {
+                    "day": "목",
+                    "success": false
+                },
+                {
+                    "day": "금",
+                    "success": true
+                }
+            ]
+        }
+    ]
+}

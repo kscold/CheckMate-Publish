@@ -1,0 +1,25 @@
+@mixin _nav-link() {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  @include custom-font-color(color-8);
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin _nav-link_under-line() {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+@mixin fixed_header($w: 100%, $h: 88px, $c: white) {
+  position: sticky;
+  top: 0;
+  width: $w;
+  height: $h;
+  z-index: 10;
+  background-color: $c;
+}
